@@ -1,14 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GitFav</title>
-    <link rel="stylesheet" href="style.css">
-<script src="scripts/main.js" type="module" defer></script>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="style.css" />
+    <script src="scripts/main.js" type="module" defer></script>
+  </head>
+  <body>
+    <header>
+      <img
+        src="src/images/Gitfav.svg"
+        alt="Logo da aplicação,composto por uma estrela branca envolvida por um par de chavez e a direita o nome da aplicação Gitfav"
+      />
+      <label for="input-search"
+        >Digite o nome de usuário do Github que você deseja favoritar</label
+      >
+      <input
+        type="text"
+        placeholder="Enter the Github username you want to favorite"
+        id="input-search"
+      />
+      <button>
+        <img src="src/images/favorite.svg" alt="Ícone de estrela" /><span
+          >Favoritar</span
+        >
+      </button>
+    </header>
+  </body>
 </html>
