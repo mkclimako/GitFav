@@ -140,16 +140,6 @@ table {
   border-collapse: collapse;
 }
 
-table.empty {
-  background-image: url('/src/images/nofavorites.svg');
-  background-color: var(--tr-odd);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 26rem;
-
-  border-radius: 0 0 0.5rem 0.5rem;
-
-}
 
 table * {
   color: var(--text-color);
