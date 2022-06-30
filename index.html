@@ -1,86 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GitFav</title>
     <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <script src="scripts/main.js" type="module" defer></script>
   </head>
   <body>
-    <header>
-      <img
-        src="src/images/Gitfav.svg"
-        alt="Logo da aplicação,composto por uma estrela branca envolvida por um par de chavez e a direita o nome da aplicação Gitfav"
-      />
-      <label for="input-search"
-        >Digite o nome de usuário do Github que você deseja favoritar</label
-      >
-      <input
-        type="text"
-        placeholder="Enter the Github username you want to favorite"
-        id="input-search"
-      />
-      <button>
-        <img src="src/images/favorite.svg" alt="Ícone de estrela" /><span
-          >Favoritar</span
-        >
-      </button>
-    </header>
-
-    <table>
-      <thead>
-       <td>
-        <td>User</td>
-        <td>Repositories</td>
-        <td>Followers</td>
-        <td>Following</td>
-        <td>Action</td>
-       </td>
-      </thead>
-      <tbody>
-      <tr>
-        <td class="user">
-            <img
-              src="https://avatars.githubusercontent.com/u/95707510?s=96&v=4"
-              alt=""
-            />
-            <a href="https://github.com/mkclimako" target="_blank"
-              ><p>Marko Climako</p>
-              <span>mkclimako</span></a
+    <div id="app">
+      <header>
+        <img
+          src="src/images/Gitfav.svg"
+          alt="Logo da aplicação,composto por uma estrela branca envolvida por um par de chavez e a direita o nome da aplicação Gitfav"
+        />
+        <div class="search-container">
+          <label for="input-search" class="sr-only"
+            >Digite o nome de usuário do Github que você deseja favoritar</label
+          >
+          <input
+            type="text"
+            placeholder="Enter the Github username you want to favorite"
+            id="input-search"
+          />
+          <button>
+            <img src="src/images/favorite.svg" alt="Ícone de estrela" /><span
+              >Favoritar</span
             >
-          </td>
-          <td class="repositories">10</td>
-      
-          <td class="followers">9</td>
-          <td class="following">12</td>
+          </button>
+        </div>
+      </header>
 
-          <td>
-            <button class="remove">&times;</button>
-          </td>`
-      </tr>
-      <tr>
-        <td class="user">
-            <img
-              src="https://avatars.githubusercontent.com/u/95707510?s=96&v=4"
-              alt=""
-            />
-            <a href="https://github.com/mkclimako" target="_blank"
-              ><p>Marko Climako</p>
-              <span>mkclimako</span></a
-            >
-          </td>
-          <td class="repositories">10</td>
-      
-          <td class="followers">9</td>
-          <td class="following">12</td>
+      <table class="empty">
+        <thead>
+          <tr>
+            <th>User</th>
+            <th>Repositories</th>
+            <th>Followers</th>
+            <th>Following</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+      <td class="user">
+          <img
+            src="https://avatars.githubusercontent.com/u/95707510?s=96&v=4"
+            alt=""
+          />
+          <a href="https://github.com/mkclimako" target="_blank"
+            ><p>Marko Climako</p>
+            <span>mkclimako</span></a
+          >
+        </td>
+        <td class="repositories">10</td>
+    
+        <td class="followers">9</td>
+        <td class="following">12</td>
 
-          <td>
-            <button class="remove">&times;</button>
-          </td>`
-      </tr>
-      </tbody>
-    </table>
+        <td>
+          <button class="remove">remove</button>
+        </td>`
+    </tr>
+    <tr>
+      <td class="user">
+          <img
+            src="https://avatars.githubusercontent.com/u/95707510?s=96&v=4"
+            alt=""
+          />
+          <a href="https://github.com/mkclimako" target="_blank"
+            ><p>Marko Climako</p>
+            <span>mkclimako</span></a
+          >
+        </td>
+        <td class="repositories">10</td >
+    
+        <td class="followers">9</td>
+        <td class="following">12</td>
+
+        <td>
+          <button class="remove">remove</button>
+        </td>`
+    </tr>
+    <tr>
+      <td class="user">
+          <img
+            src="https://avatars.githubusercontent.com/u/95707510?s=96&v=4"
+            alt=""
+          />
+          <a href="https://github.com/mkclimako" target="_blank"
+            ><p>Marko Climako</p>
+            <span>mkclimako</span></a
+          >
+        </td>
+        <td class="repositories">10</td >
+    
+        <td class="followers">9</td>
+        <td class="following">12</td>
+
+        <td>
+          <button class="remove">remove</button>
+        </td>`
+    </tr>
+    <tr>
+      <td class="user">
+          <img
+            src="https://avatars.githubusercontent.com/u/95707510?s=96&v=4"
+            alt=""
+          />
+          <a href="https://github.com/mkclimako" target="_blank"
+            ><p>Marko Climako</p>
+            <span>mkclimako</span></a
+          >
+        </td>
+        <td class="repositories">10</td >
+    
+        <td class="followers">9</td>
+        <td class="following">12</td>
+
+        <td>
+          <button class="remove">remove</button>
+        </td>`
+    
+        </tbody>
+      </table>
+    </div>
   </body>
 </html>
