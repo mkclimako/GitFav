@@ -132,6 +132,7 @@ header img {
   transform: scale(1.2);
   transition: transform 350ms ease;
 }
+
 table {
   width: 100%;
   height: 15rem;
@@ -147,6 +148,7 @@ table.empty {
   background-size: 26rem;
 
   border-radius: 0 0 0.5rem 0.5rem;
+
 }
 
 table * {
@@ -158,7 +160,7 @@ th {
   height: clamp(3.2rem, 4.2rem + 2vh, 6.2rem);
 
   text-align: center;
-  font-size:1.2rem;
+  font-size:1rem;
   font-weight: normal;
 
   color: var(--text-color);
